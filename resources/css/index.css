@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+}
+
+.rating-card,
+.thank-you {
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    font-family: Overpass;
+    height: 270px;
+    justify-content: space-between;
+    padding: 25px;
+    width: 310px;
+}
+
+.rating-card {
+    align-items: flex-start;
+}
+
+.thank-you {
+    align-items: center;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hidden {
+    display: none;
+}
+
+.star {
+    align-items: center;
+    background-color: hsl(208, 15%, 20%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 13px;
+}
+
+.heading {
+    color: hsl(0, 0%, 100%);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.note {
+    color: hsl(216, 12%, 54%);
+    font-size: 15px;
+}
+
+.rating {
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+ul li button {
+    align-items: center;
+    background-color: hsl(208, 15%, 20%);
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    color: hsl(216, 12%, 54%);
+    font-size: 15px;
+    height: 20px;
+    justify-content: center;
+    padding: 22px;
+    text-align: center;
+    transition: background-color 0.25s;
+    transition: color 0.35s;
+    width: 20px;
+}
+
+ul li button:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+ul li button:focus {
+    background-color: hsl(217, 12%, 63%);
+    color: hsl(0, 0%, 100%);
+}
+
+.submit {
+    background-color: hsl(25, 97%, 53%);
+    border-style: none;
+    border-radius: 20px;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 12px;
+    transition: all 0.25s;
+    width: 100%;
+}
+
+.submit:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    cursor: pointer;
+}
+
+.rating-info {
+    align-items: flex-end;
+    background-color: hsl(208, 15%, 20%);
+    border-radius: 20px;
+    color: hsl(25, 97%, 53%);
+    display: flex;
+    font-size: 13px;
+    gap: 4px;
+    justify-content: center;
+    padding: 8px;
+    width: 50%;
+}
+
+.thank-you p {
+    text-align: center;
+}
+
+footer {
+    bottom: 5px;
+    justify-self: center;
+    position: absolute;
+}
+
+.attribution { 
+    color: hsl(216, 12%, 54%);
+    font-size: 11px; 
+    text-align: center; 
+}
+    
+.attribution a { 
+    color: hsl(25, 97%, 53%); 
+}
